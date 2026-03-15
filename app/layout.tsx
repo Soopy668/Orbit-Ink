@@ -4,7 +4,7 @@ import { Providers } from '@/components/Providers';
 
 export const metadata: Metadata = {
   title: 'Orbit Ink',
-  description: 'A cinematic chatbot with visible thinking notes and a custom auth intro.',
+  description: 'An AI-Chatbot made by an AI-chatbot.',
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
