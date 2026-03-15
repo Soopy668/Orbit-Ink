@@ -25,9 +25,9 @@ export async function POST(req: Request) {
 
     const data = await response.json();
     const text = data?.candidates?.[0]?.content?.parts?.[0]?.text || "No response.";
-
-    return NextResponse.json({ text });
-  } catch (e) {
-    return NextResponse.json({ error: "Server Error" }, { status: 500 });
-  }
-}
+    
+return NextResponse.json({ 
+  text: text,
+  content: text, // Add this for compatibility
+  role: "assistant" 
+});
