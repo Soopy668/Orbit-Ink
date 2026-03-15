@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export async function POST(req: Request) {
   const { message } = await req.json();
 
-  const model = process.env.GEMINI_MODEL || "gemini-2.5-flash";
+  const model = process.env.GEMINI_MODEL || "gemini-1.5-flash";
   const apiKey = process.env.GEMINI_API_KEY;
 
   if (!apiKey) {
